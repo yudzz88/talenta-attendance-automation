@@ -11,8 +11,10 @@ on:
 
   # -- 3 Feb 2023
   # changed to "10 0 * * 1-5" from "20 0 * * 1-5" expecting will run at around 08:30 (previously around 08:56)
+  # -- 27 Feb 2023
+  # change to "00 23 * * 0-4" to run on Sunday 23:00 (UTC+0), equivalent to Monday 08:00 (UTC+7). There is 1h 50mins delay
   schedule:
-    - cron: "0 0 * * 1-5"
+    - cron: "00 23 * * 0-4"
   workflow_dispatch:
 
 jobs:
