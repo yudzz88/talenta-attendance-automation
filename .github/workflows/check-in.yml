@@ -17,9 +17,11 @@ on:
     
   # -- 28 Feb 2023
   # changed to  "0 1 * * 1-5" expecting will run at around 08:50ish (previously around 06:30 ish)
+    # -- 28 Feb 2023
+  # changed to  "30 23 * * 0-4" expecting will run at around 08:50ish (previously around 10:15 ish UTC+7)
 
   schedule:
-    - cron: "0 1 * * 1-5"
+    - cron: "30 23 * * 0-4"
   workflow_dispatch:
 
 jobs:
