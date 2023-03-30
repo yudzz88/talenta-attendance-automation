@@ -55,7 +55,7 @@ jobs:
           node-version: 18
           cache: "pnpm"
       - name: Install pnpm
-        run: npm install -g pnpm
+        run: npm install -g pnpm@7.30.5
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
       - name: Checking In
